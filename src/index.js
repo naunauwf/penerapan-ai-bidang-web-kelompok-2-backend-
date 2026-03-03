@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 // CORS - izinkan request dari semua origin (React di port 5173, dll)
 app.use(
   cors({
-    origin: ["https://naunauwf.github.io", "http://localhost:5173/"], // Untuk production, ganti dengan domain React Anda
+    origin: ["https://naunauwf.github.io", "http://localhost:5173"], // Untuk production, ganti dengan domain React Anda
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
   }),
